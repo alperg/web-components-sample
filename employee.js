@@ -12,14 +12,16 @@ class Employee extends HTMLElement {
           border-bottom: 1px solid #ececec;
         }
         span { display: inline-block; padding-bottom: 10px; }
-        .avatar { width: 90px; }
-        .name { width: 250px; }
-        .email { width: 230px; }
-        .gender { width: 100px; }
-        .department { width: 240px; }
-        .date { width: 200px; }
+        .id { width: 5%; }
+        .avatar { width: 7%; }
+        .name { width: 26%; }
+        .email { width: 22%; }
+        .gender { width: 7%; }
+        .department { width: 24%; }
+        .date { width: 7%; }
       </style>
       <li>
+        <span class="id">${employee.id}</span>
         <span class="avatar"><img src="${employee.avatar}"></span>
         <span class="name">${employee.firstName} ${employee.lastName}</span>
         <span class="email">${employee.email}</span>
