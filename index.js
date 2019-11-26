@@ -1,18 +1,18 @@
-import './employee.js';
+import './grocery.js';
 
 window.addEventListener('load', () => {
-  getEmployees();
+  getGroceries();
 });
 
-async function getEmployees() {
-  const response = await fetch('http://api.alperg.com/employees');
+async function getGroceries() {
+  const response = await fetch('http://api.alperg.com/groceries');
   const json = await response.json();
   
   const main = document.querySelector('ul');
 
-  json.forEach(employee => {
-    const el = document.createElement('custom-employee');
-    el.detail = employee;
+  json.forEach(item => {
+    const el = document.createElement('grocery-item');
+    el.detail = item;
     main.appendChild(el);
   });
 }
