@@ -14,7 +14,7 @@ class Grocery extends HTMLElement {
           line-height: 22px;
           padding: 16px 10px 0 10px;
         }
-        li:last-child {border-bottom: none;}
+        li:last-child { border-bottom: none; }
         li:hover { background-color: #6fb98f; cursor: pointer; }
         span { display: inline-block; padding-bottom: 10px; }
         .name { width: 250px; }
